@@ -1,0 +1,62 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrollbars */
+  margin: 0; /* Ensure no margin is causing overflow */
+  padding: 0; /* Ensure no padding is causing overflow */
+}
+
+
+.background-image {
+  width: 100vw; /* Ensure it covers full viewport width */
+  height: 100vh; /* Ensure it covers full viewport height */
+  background-size: cover; /* Cover the whole container */
+  background-position: center; /* Center the image */
+  position: relative; /* Relative for absolute positioning of the overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.grid-overlay {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(3, 1fr); /* 3 rows */
+  width: 100%; /* Cover the whole background */
+  height: 100%; /* Cover the whole background */
+  position: absolute; /* Position over the background image */
+  top: 0;
+  left: 0;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1); /* Semi-transparent overlay */
+  border: 1px solid #fff; /* Optional: border for grid items */
+  position: relative; /* For positioning inside */
+}
+
+.grid-item button {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.grid-item button:hover {
+  background-color: #ddd;
+}
+
+.grid-item.hidden {
+  background-color: rgba(0, 0, 0, 0); /* Semi-transparent overlay */
+  border: none; /* Remove border */
+}

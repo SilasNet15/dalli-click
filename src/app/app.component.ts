@@ -35,11 +35,31 @@ export class AppComponent {
   // Function to initialize images array
   loadImages(): void {
     const imagePaths = [
-      { path: 'assets/images/image_1.jpeg', imageName: 'Image 1' },
-      { path: 'assets/images/image_2.jpg', imageName: 'Image 2' },
-      { path: 'assets/images/image_3.webp', imageName: 'Image 3' },
-      { path: 'assets/images/image_4.jpg', imageName: 'Image 4' },
-      { path: 'assets/images/image_5.jpg', imageName: 'Image 5' },
+      { path: 'assets/images/bild_1.jpg', imageName: 'Bild 1' },
+      { path: 'assets/images/bild_2.jpg', imageName: 'Bild 2' },
+      { path: 'assets/images/bild_3.jpg', imageName: 'Bild 3' },
+      { path: 'assets/images/bild_3a.jpg', imageName: 'Bild 3a' },
+      { path: 'assets/images/bild_4.jpg', imageName: 'Bild 4' },
+      { path: 'assets/images/bild_4a.jpg', imageName: 'Bild 4a' },
+      { path: 'assets/images/bild_5.jpg', imageName: 'Bild 5' },
+      { path: 'assets/images/bild_5a.jpg', imageName: 'Bild 5a' },
+      { path: 'assets/images/bild_6.jpg', imageName: 'Bild 6' },
+      { path: 'assets/images/bild_7.jpg', imageName: 'Bild 7' },
+      { path: 'assets/images/bild_8.jpg', imageName: 'Bild 8' },
+      { path: 'assets/images/bild_9.jpg', imageName: 'Bild 9' },
+      { path: 'assets/images/bild_10.jpg', imageName: 'Bild 10' },
+      { path: 'assets/images/bild_11.jpg', imageName: 'Bild 11' },
+      { path: 'assets/images/bild_12.jpg', imageName: 'Bild 12' },
+      { path: 'assets/images/bild_12a.jpg', imageName: 'Bild 12a' },
+      { path: 'assets/images/bild_13.jpg', imageName: 'Bild 13' },
+      { path: 'assets/images/bild_14.jpg', imageName: 'Bild 14' },
+      { path: 'assets/images/bild_15.jpg', imageName: 'Bild 15' },
+      { path: 'assets/images/bild_16.jpg', imageName: 'Bild 16' },
+      { path: 'assets/images/bild_17.jpg', imageName: 'Bild 17' },
+      { path: 'assets/images/bild_17a.jpg', imageName: 'Bild 17a' },
+      { path: 'assets/images/bild_17b.jpg', imageName: 'Bild 17b' },
+      { path: 'assets/images/bild_18.jpg', imageName: 'Bild 18' },
+      { path: 'assets/images/bild_19.jpg', imageName: 'Bild 19' },
     ];
 
     this.images = imagePaths.map((image, index) => ({ index, ...image }));

@@ -56,7 +56,7 @@
   background-color: #ddd;
 }
 
-.grid-item.hidden {
+.grid-item.revealed {
   background-color: rgba(0, 0, 0, 0); /* Semi-transparent overlay */
   border: none; /* Remove border */
 }

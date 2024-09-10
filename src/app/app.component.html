@@ -1,18 +1,16 @@
 <main
   class="background-image"
-  [ngStyle]="{'background-image': 'url(' + images[count].path + ')'}"
+  [ngStyle]="{'background-image': 'url(' + imageList[currentImageIndex].path + ')'}"
 >
   <!-- Your grid overlay container -->
   <div class="grid-overlay">
     <!-- Generate 12 grid items using *ngFor -->
-    <div
-      *ngFor="let piece of gridPieces; let i = index"
-      class="grid-item"
-      [ngClass]="{ 'hidden': piece.hidden }"
-    >
-    </div>
+    @for (piece of gridPieceList; track piece) {
+      <div
+        class="grid-item"
+        [ngClass]="{ 'revealed': piece.revealed }"
+      >
+      </div>
+    }
   </div>
 </main>
-
-
-<router-outlet />

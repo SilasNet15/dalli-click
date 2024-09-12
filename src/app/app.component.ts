@@ -38,7 +38,8 @@ export class AppComponent implements OnInit {
 
   @HostListener('window:keydown', ['$event'])
   protected handleKeyDown(event: KeyboardEvent): void {
-    switch (event.key) {
+    console.log('handleKeyDown', event);
+    switch (event.code) {
       case 'ArrowRight':
         console.log('Arrow Right pressed');
         if (this.isAllRevealed()) {
@@ -55,6 +56,14 @@ export class AppComponent implements OnInit {
           this.loadPreviousImage();
         }
         break;
+      case 'Space': {
+        this.revealAllGridPieces();
+        break;
+      }
+      case 'Backspace': {
+        this.resetGridPieces();
+        break;
+      }
     }
   }
 

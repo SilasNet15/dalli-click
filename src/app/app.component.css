@@ -41,6 +41,7 @@
   background-color: rgba(0, 0, 0, 1); /* Semi-transparent overlay */
   border: 1px solid #fff; /* Optional: border for grid items */
   position: relative; /* For positioning inside */
+  transition: background-color 0.3s;
 }
 
 .grid-item button {
@@ -49,7 +50,7 @@
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  transition: background-color 0.3s;
+  transition: background-color 0.8s;
 }
 
 .grid-item button:hover {
